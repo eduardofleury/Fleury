@@ -8,7 +8,7 @@ var routes = require('./routes/index');
 var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
 var aluno = require('./routes/aluno');
-var aluno = require('./routes/carro');
+var carro = require('./routes/carro');
 
 var mongoose = require('mongoose');
 
