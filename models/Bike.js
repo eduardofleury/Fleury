@@ -6,7 +6,9 @@ var BikeSchema = new mongoose.Schema({
     preco: Number,
     quadro: String,
     revisao: Number,
-    freio: String
+    freio:{
+  	 nome:String
+    }
 });
 
 module.exports = mongoose.model('Bike', BikeSchema);
