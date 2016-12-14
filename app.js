@@ -11,6 +11,7 @@ var aluno = require('./routes/aluno');
 var carro = require('./routes/carro');
 var bike = require('./routes/bike');
 var time = require('./routes/time');
+var freio = require('./routes/freio');
 
 var mongoose = require('mongoose');
 
@@ -62,6 +63,7 @@ app.use('/aluno', aluno);
 app.use('/carro', carro);
 app.use('/bike', bike);
 app.use('/time', time);
+app.use('/freio', freio);
 
 
 
