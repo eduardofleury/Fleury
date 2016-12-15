@@ -7,7 +7,8 @@ var BikeSchema = new mongoose.Schema({
     quadro: String,
     revisao: Number,
     freio:{
-  	 nome:String
+  	 nome:String,
+         preco: String
     }
 });
 
