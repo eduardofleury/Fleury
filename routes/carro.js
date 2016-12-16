@@ -1,11 +1,10 @@
 var express = require('express');
 var router = express.Router();
-var auth = require('./auth');
 
 var Carro = require('../models/Carro.js');
 
 /* GET /carro Listagem de perfis. */
-router.route('/').get(auth, function(req, res, next) {
+router.get('/', function(req, res, next) {
   Carro.find(function (err, carro) {
     if (err) return next(err);
     res.json(carro);
